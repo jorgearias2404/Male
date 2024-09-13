@@ -11,7 +11,7 @@ Inscribete_Buton.addEventListener("click",()=>{
         Body2.style.display ="none"
     }
     else{
-        Body1.style.display = 'none'
+         Body1.style.display = "none"
          Body2.style.display ="block"
     }
 });
