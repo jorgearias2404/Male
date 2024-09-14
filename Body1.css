@@ -1,0 +1,276 @@
+:root{
+    --dark_brown:#684627;
+    --light_brown:#B5977D;
+    --very-Light-brown:#F0DAAE;
+    --cream:#FFF8F1;
+    --pink:#FFCDE8;
+    --red:#9B3C27;
+}
+ body {
+    font-family: 'Nunito',sans-serif;
+    background-color: var(--cream);
+    margin: 0px;
+ 
+
+}
+/*ESTE ES EL BODY 1*/
+#Body1{
+  
+    display: block;
+    width: 100%;
+
+}
+/*ESTE ES EL BODY 2*/
+
+.Title{
+   display: flex;
+  align-items: center;
+}
+.Title h1{
+color: var(--pink);
+font-size: 3rem;
+
+}
+.Button_Nav{
+    display: none;
+}
+.Title-Image{
+    width: 7rem;
+    height: 6rem;
+    float: left;
+    margin-right:1rem;
+    padding-top: 1.5rem;
+}
+.Header{
+    background-color: var(--dark_brown);
+    display: flex;
+    justify-content: center;
+    padding-bottom:3rem;
+    
+}
+.NavContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    height: 0.6rem;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--pink) ;
+    width: 90%;
+    border-radius:2.5rem;
+    place-items: center;
+    height: 4.5rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+
+}
+.NavBar span button{
+   
+   
+    font-size: 1.563rem;
+    
+    height: 3.75rem;
+    width: 12rem;
+    
+    border-radius: 1.875rem;
+    padding: 0px;
+   
+ 
+    
+}
+.Container-images{
+display: flex;
+margin: 90px;
+margin-bottom: 0px;
+padding-top: 20px;
+justify-content: space-between;
+
+}
+.Container-images div :nth-child(1)
+{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.Container-images div :nth-child(2)
+{
+    font-size: 70px;
+    margin-top: 0px;
+    color: var(--dark_brown);
+}
+
+.Images{
+    padding-top:2rem ;
+    display: flex;
+   
+ 
+
+}
+.Images img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 40px;
+    border:4px solid var(--pink) ;
+   
+}
+#Mobile-Show
+{
+    display: none;
+}
+.space{
+    margin-top: 0px;
+    margin-bottom:0px ;
+}
+.Container-button{
+    display: flex;
+    justify-content: space-between;
+    margin-left:70px ;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+/*clase button para uso general*/
+.Button{
+    text-decoration: none;
+    border: 4px solid var(--pink);
+    background-color:var(--pink) ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Button-Inscribirse{
+    
+   
+    border-radius: 40px;
+    width: 250px;
+    height: 100px;
+ 
+    font-size: 30px;
+    margin-right: 30px;
+   
+}
+.Button:hover{
+    border: 4px solid var(--light_brown);
+    background-color: var(--dark_brown);
+    color: var(--pink);
+}
+.Container-button p{
+   text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 60%;
+
+
+}
+.Center{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+  #Temporal{
+    display: none;
+  }
+  .Header{
+    padding-bottom: 10px;
+    border-bottom-right-radius:2rem;
+    border-bottom-left-radius:2rem;
+  }
+  .Title-Image{
+    width: 5rem;
+    height: 5rem;
+  }
+  .Button h1{
+    font-size: 3rem;
+    }
+
+    .NavContainer{
+        display: none;
+    }
+    .space{
+        margin-top: 0.7rem;
+        width: auto;
+        height: auto;
+    }
+    .Container-images{
+        display: flex;
+        margin: 1rem;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .Container-images div :nth-child(1)
+{
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.Container-images div :nth-child(2)
+{
+    font-size: 2rem;
+    margin-top: 0px;
+    color: var(--dark_brown);
+   
+}
+
+.Images{
+    display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+   width: 100%;
+
+}
+.Images img{
+    width: 5em;
+    height: 8rem;
+    margin: 10px;
+    border-radius: 1rem;
+    border:4px solid var(--pink) ;
+   
+}
+.Container-button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+.Button-Inscribirse{
+    
+   
+    border-radius: 40px;
+    width: auto;
+    height: 100px;
+ 
+    font-size: 30px;
+   
+    
+   
+}
+.Container-button p{
+
+    display: none;
+   font-size: 20px;
+   justify-content: center;
+
+
+ }
+ #Mobile-Show{
+    display: block;
+    text-align:justify;
+  margin-left: 0px;
+    margin-bottom: 40px;
+    width: auto;
+    height: auto;
+ }
+.Button-Inscribirse{
+    margin: 0px;
+    padding: 0px;
+}
+}
